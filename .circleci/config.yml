@@ -19,6 +19,7 @@ jobs:
             cd smallerc
             export PATH=$PATH:$(pwd)
             cd ..
+            make libs
             make QroVMT.bin 
 
       - store_artifacts:
