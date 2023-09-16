@@ -1,0 +1,13 @@
+print.c
+exit.c
+conv.c
+math.c
+string.c
+fs.c
+memory.c
+stream.c
+console.c
+file.c
+asm/memory.asm
+asm/math.asm
+asm/string.asm
