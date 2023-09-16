@@ -15,7 +15,11 @@ jobs:
             sudo chmod -R +x *
       - run:
           name: Generate Builds
-          command: make QroVMT.bin 
+          command: |
+            cd smallerc
+            export PATH=$PATH:$(pwd)
+            cd ..
+            make QroVMT.bin 
 
       - store_artifacts:
           path: ~/repo/
