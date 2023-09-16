@@ -17,8 +17,8 @@ jobs:
           name: Add SmallerC to PATH
           path: ~/repo/smallerc
           command: | 
-          echo 'export PATH=$PATH:$(pwd)' >> $BASH_ENV
-          ls
+            echo 'export PATH=$PATH:$(pwd)' >> $BASH_ENV
+            ls
       - run:
           name: Generate Builds
           command: make QroVMT.bin 
