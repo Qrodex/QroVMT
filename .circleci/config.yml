@@ -14,12 +14,6 @@ jobs:
             sudo apt-get install -y dpkg fakeroot wine32 wine64 rpm nasm make
             sudo chmod -R +x *
       - run:
-          name: Add SmallerC to PATH
-          path: ~/repo/smallerc
-          command: | 
-            echo 'export PATH=$PATH:$(pwd)' >> $BASH_ENV
-            ls
-      - run:
           name: Generate Builds
           command: make QroVMT.bin 
 
