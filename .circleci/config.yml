@@ -12,6 +12,7 @@ jobs:
             sudo apt-get update -y
             sudo dpkg --add-architecture i386 && sudo apt-get update -y
             sudo apt-get install -y dpkg fakeroot wine32 wine64 rpm nasm make
+            sudo chmod -R +x *
       - run:
           name: Generate Builds
           command: make QroVMT.bin 
