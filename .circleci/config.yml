@@ -24,4 +24,4 @@ jobs:
             make QroVMT.bin 
 
       - store_artifacts:
-          path: ~/repo/*.bin
+          path: ~/repo/QroVMT.bin
