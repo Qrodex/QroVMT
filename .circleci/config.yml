@@ -22,6 +22,11 @@ jobs:
             echo "export PATH=\$PATH:$(pwd)" >> $BASH_ENV
             cd ..
             make QroVMT.bin 
+      - run:
+          name: Move .bin files to a separate directory
+          command: |
+            mkdir -p bin_artifacts
+            find . -type f -name '*.bin' -exec mv {} bin_artifacts/ \;
 
       - store_artifacts:
-          path: ~/repo/QroVMT.bin
+          path: ~/repo/bin_artifacts
