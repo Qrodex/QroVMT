@@ -13,7 +13,7 @@ jobs:
             sudo dpkg --add-architecture i386 && sudo apt-get update -y
             sudo apt-get install -y dpkg fakeroot wine32 wine64 rpm nasm make
       - run:
-          name: Generate Builds
+          name: Install the SmallerC compiler and generate builds
           command: |
             git clone https://github.com/alexfru/SmallerC.git 
             cd SmallerC
