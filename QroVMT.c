@@ -5,7 +5,7 @@
 
 int main(int argc, char **argv)
 {
-	char top_text[] = "QroOS Venom Management Tool";
+	char top_text[] = "Qrodex Venom Management Tool For QroOS";
 	char bottom_text[] = "Copyright 2023 QRodEX Technologies";
 	int color = 0x001f;
 	int key;
@@ -13,9 +13,11 @@ int main(int argc, char **argv)
 	do {
 		os_clear_screen();
 		os_draw_background(top_text, bottom_text, color);
-		printf("  \n");
 
+		printf("  \n");
 		printf("  QrodEX DDXX - DXXD Series\n");
+		printf("  9.4 Legend Edition\n");
+
 		printf("  \n");
 		printf("  Manufacturer: QrodEX \n");
 		printf("  Speed: 1.93Ghz \n");
