@@ -15,8 +15,9 @@ jobs:
       - run:
           name: Generate Builds
           command: |
-            cd smallerc
-            chmod +x *
+            git clone https://github.com/alexfru/SmallerC.git 
+            cd SmallerC
+            make
             export PATH=$PATH:$(pwd)
             echo "export PATH=\$PATH:$(pwd)" >> $BASH_ENV
             cd ..
