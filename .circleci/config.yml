@@ -3,7 +3,7 @@ jobs:
   build:
     working_directory: ~/repo
     docker:
-      - image: cimg/base:2021.04
+      - image: cimg/base:2023.09
     steps:
       - checkout
       - run:
